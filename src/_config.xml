@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+    <id>elastic-search-mig</id>
+    <name>elastic-search</name>
+    <description>elastic-search</description>
+    <executable>java</executable>
+    <arguments>-Dspring.profiles.active=train -Xmx512m -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=5006,suspend=n  -jar "elastic-search-0.9-SNAPSHOT.jar"</arguments>
+    <logmode>rotate</logmode>
+</service>
